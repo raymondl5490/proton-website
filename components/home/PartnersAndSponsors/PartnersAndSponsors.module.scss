@@ -1,0 +1,15 @@
+.container {
+  margin: 2rem 0;
+  .title {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .images {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    .image {
+      display: inline-flex;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.container {
+  .banner {
+    background-image: url("/home/story-banner.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 30rem;
+  }
+  .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .title,
+    .subtitle {
+      text-align: center;
+    }
+    .title {
+    }
+    .subtitle {
+    }
+    .text {
+      display: flex;
+      max-width: 60rem;
+      align-self: center;
+
+      .paragraph {
+        line-height: 1.6;
+        &:not(:last-of-type) {
+          margin-right: 1rem;
+        }
+      }
+    }
+    .buttons {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

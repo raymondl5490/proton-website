@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  .article {
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+  }
+}

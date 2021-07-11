@@ -1,0 +1,27 @@
+.container {
+  flex-grow: 1;
+  &:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+  .title {
+    color: #eee;
+    border-bottom: 1px solid #5a5b6a;
+    padding-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  ul.links {
+    padding-left: 0;
+    list-style: none;
+
+    li.link {
+      color: #848690;
+      transition: color 0.1s ease-in-out;
+      line-height: 2;
+      &:hover {
+        color: #eee;
+        text-decoration: underline;
+      }
+    }
+  }
+}

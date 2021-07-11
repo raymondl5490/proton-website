@@ -1,0 +1,57 @@
+.feature {
+  margin: 2rem;
+
+  .icon {
+    display: block;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    background: url("/home/service-sprites.svg");
+    color: #9497ce;
+
+    &.swiss {
+      background-position: 0 0;
+    }
+
+    &.e2ee {
+      background-position: -54px 0;
+    }
+
+    &.anonymous {
+      background-position: -107px 0;
+    }
+
+    &.free {
+      background-position: -160px 0;
+    }
+
+    &.easy {
+      background-position: -213px 0;
+    }
+
+    &.design {
+      background-position: -266px 0;
+    }
+  }
+
+  .title {
+    font-weight: 300;
+  }
+
+  .subtitle {
+    margin-bottom: 1rem;
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
+
+  .description {
+    a {
+      color: #000;
+    }
+  }
+
+  .title,
+  .description {
+    margin: 0.66rem 0;
+  }
+}

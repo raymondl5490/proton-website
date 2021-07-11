@@ -1,0 +1,27 @@
+.physicalSecurity {
+  background-image: url("/home/security-bg.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 12rem 0;
+  display: flex;
+  color: #eee;
+  .modalWindow {
+    background-color: #505061;
+    padding: 3rem;
+    width: 40%;
+    margin-left: 2rem;
+    .title,
+    .text {
+      color: #fff;
+    }
+    .title {
+      margin: 0;
+    }
+    .text {
+      margin: 2rem 0;
+      line-height: 1.5rem;
+    }
+  }
+}

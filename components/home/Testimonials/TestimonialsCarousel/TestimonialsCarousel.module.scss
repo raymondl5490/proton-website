@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  .testimonial {
+    padding-bottom: 2rem;
+    .author {
+      font-size: 1rem;
+      font-weight: 600;
+      color: darken(rgb(80, 80, 97), 5%);
+      &:before,
+      &:after {
+        font-weight: initial;
+        color: #ccc;
+        content: "\2014";
+        margin: 0 0.25rem;
+      }
+    }
+  }
+}

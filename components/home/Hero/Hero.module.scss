@@ -1,0 +1,44 @@
+.hero {
+  background-image: url("/home/main-banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100%;
+  padding-top: 8rem;
+
+  .heroContent {
+    display: flex;
+    justify-content: center;
+    padding: 12rem 0;
+
+    .text {
+      .title,
+      .subtitle,
+      .purpose {
+        color: #fff;
+      }
+
+      .title {
+        font-size: 3rem;
+        margin: 0;
+      }
+
+      .subtitle {
+        font-weight: 100;
+        font-size: 3rem;
+        margin: 0;
+      }
+
+      .purpose {
+        margin: 1.5rem 0 2rem;
+        font-weight: 600;
+      }
+    }
+
+    .image {
+      max-width: 600px;
+      transform: translate(2rem, -4rem);
+    }
+  }
+}

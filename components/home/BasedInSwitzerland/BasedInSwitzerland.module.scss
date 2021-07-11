@@ -1,0 +1,25 @@
+.container {
+  height: 20rem;
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/home/map-image.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .text {
+    color: #eee;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    width: max-content;
+    align-self: center;
+    background: #505061;
+    line-height: 2;
+    padding: 0 0.5rem;
+    &:not(:last-of-type) {
+      margin-bottom: 0.25rem;
+    }
+  }
+}

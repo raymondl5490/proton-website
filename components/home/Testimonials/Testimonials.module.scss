@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .carousel {
+    margin-top: 6rem;
+    width: 60%;
+    align-self: center;
+  }
+}
