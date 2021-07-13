@@ -25,6 +25,7 @@
 }
 .secondary {
   display: flex;
+  align-items: center;
   .logo {
     flex: 2;
   }
@@ -34,7 +35,6 @@
 
     @media screen and (min-width: $MQ_Desktop) {
       display: flex;
-      align-self: center;
     }
     .link {
       text-decoration: none;
