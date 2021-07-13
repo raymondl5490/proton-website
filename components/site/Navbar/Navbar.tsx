@@ -85,13 +85,13 @@ export const Navbar = () => {
         </nav>
         <div className={styles.buttons}>
           <Link href="/login">
-            <a className={styles.link}>
+            <a className={styles.button}>
               <CTAButton type={1}>Log in</CTAButton>
             </a>
           </Link>
 
           <Link href="/signup">
-            <a className={styles.link}>
+            <a className={styles.button}>
               <CTAButton type={2}>Sign up</CTAButton>
             </a>
           </Link>
