@@ -1,7 +1,15 @@
+@import '../../../styles/breakpoints.scss';
+
 .features {
   display: grid;
   margin: 0 auto;
-  padding: 2rem;
-  width: 80%;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
+
+  @media screen and (min-width: $MQ_Tablet) {
+    grid-template-columns: auto auto;
+  }
+
+  @media screen and (min-width: $MQ_Desktop) {
+    grid-template-columns: auto auto auto;
+  }
 }

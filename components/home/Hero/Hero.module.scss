@@ -1,5 +1,7 @@
-.hero {
-  background-image: url("/home/main-banner.png");
+@import '~/styles/breakpoints';
+
+.container {
+  background-image: url('/home/main-banner.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,10 +9,15 @@
   width: 100%;
   padding-top: 8rem;
 
-  .heroContent {
+  .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 12rem 0;
+    padding: 12rem 2rem;
+
+    @media screen and (min-width: $MQ_Phone) {
+      flex-direction: row;
+    }
 
     .text {
       .title,
@@ -38,7 +45,10 @@
 
     .image {
       max-width: 600px;
-      transform: translate(2rem, -4rem);
+      margin-top: 2rem;
+      @media screen and (min-width: $MQ_Phone) {
+        transform: translateY(-4rem);
+      }
     }
   }
 }

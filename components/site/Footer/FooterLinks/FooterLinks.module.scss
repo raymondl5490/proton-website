@@ -1,5 +1,14 @@
+@import '~/styles/breakpoints.scss';
+
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 0 20rem;
+  max-width: $MQ_Desktop;
+  @media screen and (min-width: $MQ_Tablet) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: $MQ_Desktop) {
+    margin: 0 auto;
+  }
 }

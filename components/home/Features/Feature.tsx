@@ -9,12 +9,12 @@ export interface FeatureProps {
 
 export const Feature = ({ icon, title, subtitle, description }: FeatureProps) => {
   return (
-    <div className={styles.feature}>
+    <section className={styles.feature}>
       <div className={`${styles.icon} ${styles[icon]}`} />
       <h1 className={styles.title}>{title}</h1>
       <h2 className={styles.subtitle}>{subtitle}</h2>
       <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }}></p>
-    </div>
+    </section>
   );
 };
 

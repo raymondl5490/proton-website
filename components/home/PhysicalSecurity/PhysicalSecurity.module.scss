@@ -1,5 +1,7 @@
+@import '~/styles/breakpoints.scss';
+
 .physicalSecurity {
-  background-image: url("/home/security-bg.jpg");
+  background-image: url('/home/security-bg.jpg');
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10,8 +12,8 @@
   .modalWindow {
     background-color: #505061;
     padding: 3rem;
-    width: 40%;
-    margin-left: 2rem;
+    max-width: $MQ_Phone;
+    margin: 0 2rem;
     .title,
     .text {
       color: #fff;

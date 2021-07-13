@@ -1,11 +1,14 @@
+@import '~/styles/breakpoints.scss';
+
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 10px;
-  padding: 2rem 8rem;
-  width: 80%;
-  margin: 0 auto;
   font-size: 0.9rem;
+  padding: 2rem 2rem;
+  @media screen and (min-width: $MQ_Tablet) {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 8rem;
+  }
 
   .physicalAddress {
     .vcard {
