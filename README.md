@@ -1,6 +1,10 @@
 # ProtonMail website
 
-This is a replica of ProtonMail's website (protonmail.com), made in [Next.js][Next.js Homepage], the React Framework for Production.
+This is a replica of ProtonMail's website (protonmail.com), made in [Next.js][next.js homepage], the React Framework for Production.
+
+## Demo
+
+After each push to `develop`, [Vercel][vercel homepage] builds a demo, which becomes available at [protonmail-website-develop.vercel.app](https://protonmail-website-develop.vercel.app).
 
 ## Getting started
 
@@ -35,6 +39,5 @@ You can contribute to this project by submitting pull requests on GitHub. Not su
 
 This project is purely intended for research purposes.
 
-
-
-[Next.js Homepage]: https://nextjs.org/	"Homepage of Next.js, the React Framework for Production."
+[next.js homepage]: https://nextjs.org/ 'Homepage of Next.js, the React Framework for Production.'
+[vercel homepage]: https://vercel.com/ 'Homepage of Vercel'
