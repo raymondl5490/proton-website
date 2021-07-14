@@ -41,7 +41,7 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`${styles.navbar} ${opaqueNavbar ? styles.opaque : ""}`}
+      className={`${styles.container} ${opaqueNavbar ? styles.opaque : ""}`}
       onScroll={handleNavbarOpacity}
     >
       <div className={styles.primary}>

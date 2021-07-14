@@ -4,7 +4,7 @@ import CTAButton from "../../site/callToActionButton";
 
 export const PhysicalSecurity = () => {
   return (
-    <section className={styles.physicalSecurity}>
+    <section className={styles.container}>
       <div className={styles.modalWindow}>
         <h1 className={styles.title}>Physical Security</h1>
         <p className={styles.text}>

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Navbar from "../components/site/Navbar";
 import Hero from "../components/home/Hero";
 import Map from "../components/home/Map";
 import Features from "../components/home/Features";
@@ -10,12 +9,11 @@ import OurStory from "../components/home/OurStory";
 import BasedInSwitzerland from "../components/home/BasedInSwitzerland";
 import PartnersAndSponsors from "../components/home/PartnersAndSponsors";
 import ContactInformation from "../components/home/ContactInformation";
-import Footer from "../components/site/Footer";
 import Testimonials from "../components/home/Testimonials";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <Head>
         <title>Secure email: ProtonMail is free encrypted email.</title>
         <meta name="description" content="Free encrypted mail available to everyone." />
@@ -35,6 +33,6 @@ export default function Home() {
       <PartnersAndSponsors />
       <Map />
       <ContactInformation />
-    </div>
+    </main>
   );
 }

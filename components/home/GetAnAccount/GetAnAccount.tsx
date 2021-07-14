@@ -10,7 +10,7 @@ interface GetAnAccountProps {
 
 export const GetAnAccount = ({ href, headerText, buttonText }: GetAnAccountProps) => {
   return (
-    <section className={styles.getAnAccount}>
+    <section className={styles.container}>
       <h1 className={styles.headerText}>{headerText}</h1>
       <Link href={href}>
         <a>

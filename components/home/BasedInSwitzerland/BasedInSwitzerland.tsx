@@ -1,10 +1,10 @@
 import styles from "./BasedInSwitzerland.module.scss";
 const BasedInSwitzerland = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <span className={styles.text}>Based in Switzerland</span>
       <span className={styles.text}>with Global Support.</span>
-    </div>
+    </section>
   );
 };
 export default BasedInSwitzerland;

@@ -1,6 +1,6 @@
 @import '~/styles/breakpoints.scss';
 
-.navbar {
+.container {
   position: fixed;
   top: 0;
   z-index: 10;
@@ -11,10 +11,17 @@
   background-color: rgba(0, 0, 0, 0);
   transition: all 0.2s ease-in-out;
   font-size: 0.9rem;
+
   &.opaque {
     padding-bottom: 1rem;
     background-color: #505061;
   }
+
+  .primary,
+  .secondary {
+    padding: 0 2rem;
+  }
+
   .primary {
     margin-bottom: 1.25rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -22,42 +29,36 @@
     align-items: flex-end;
     flex-direction: column;
   }
-}
-.secondary {
-  display: flex;
-  align-items: center;
-  .logo {
-    flex: 2;
-  }
-  .navlinks {
-    display: none;
-    margin: 0 1rem;
 
-    @media screen and (min-width: $MQ_Desktop) {
-      display: flex;
+  .secondary {
+    display: flex;
+    align-items: center;
+    .logo {
+      flex: 2;
     }
-    .link {
-      text-decoration: none;
-      &:not(:last-of-type) {
-        margin-right: 1rem;
+    .navlinks {
+      display: none;
+      margin: 0 1rem;
+
+      @media screen and (min-width: $MQ_Desktop) {
+        display: flex;
+      }
+      .link {
+        color: #eee;
+        text-decoration: none;
+        &:not(:last-of-type) {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .buttons {
+      color: #eee;
+      .button {
+        &:not(:last-of-type) {
+          margin-right: 0.5rem;
+        }
       }
     }
   }
-  .buttons {
-    color: #eee;
-    .button {
-      &:not(:last-of-type) {
-        margin-right: 0.5rem;
-      }
-    }
-  }
-}
-
-.navbar .primary,
-.navbar .secondary {
-  padding: 0 2rem;
-}
-.navbar .secondary .navlinks,
-.navbar .secondary .navlinks .link {
-  color: #eee;
 }

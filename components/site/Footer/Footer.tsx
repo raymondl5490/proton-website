@@ -5,12 +5,12 @@ import CopyrightNotice from "./CopyrightNotice";
 import Languages from "./Languages";
 export const Footer = () => {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <FooterLinks />
       <Logos />
       <CopyrightNotice />
       <Languages />
-    </div>
+    </footer>
   );
 };
 

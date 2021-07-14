@@ -1,9 +1,10 @@
-@import '../../../styles/breakpoints.scss';
+@import '~styles/breakpoints.scss';
 
-.features {
+.container {
   display: grid;
   margin: 0 auto;
   grid-template-columns: auto;
+  max-width: $MQ_Desktop;
 
   @media screen and (min-width: $MQ_Tablet) {
     grid-template-columns: auto auto;
