@@ -11,14 +11,17 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "humanize-duration": "^3.27.0",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-responsive-carousel": "^3.2.19"
   },
   "devDependencies": {
+    "@types/humanize-duration": "^3.25.1",
     "@types/react": "17.0.13",
     "@types/webpack-env": "^1.16.2",
     "babel-plugin-inline-react-svg": "^2.0.1",

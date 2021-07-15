@@ -10,6 +10,7 @@ import BasedInSwitzerland from "../components/home/BasedInSwitzerland";
 import PartnersAndSponsors from "../components/home/PartnersAndSponsors";
 import ContactInformation from "../components/home/ContactInformation";
 import Testimonials from "../components/home/Testimonials";
+import Blog from "@/components/home/Blog";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Testimonials />
       <OurStory />
       <BasedInSwitzerland />
+      <Blog />
       <PartnersAndSponsors />
       <Map />
       <ContactInformation />

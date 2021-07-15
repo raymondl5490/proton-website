@@ -1,0 +1,20 @@
+@import '~/styles/breakpoints.scss';
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+
+  .title {
+    text-align: center;
+  }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: $MQ_Desktop;
+    @media screen and (min-width: $MQ_Desktop) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
