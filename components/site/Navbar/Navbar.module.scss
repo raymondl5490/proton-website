@@ -36,13 +36,26 @@
     .logo {
       flex: 2;
     }
-    .navlinks {
-      display: none;
-      margin: 0 1rem;
 
-      @media screen and (min-width: $MQ_Desktop) {
+    .navlinks,
+    .buttons {
+      display: none;
+    }
+
+    @media screen and (min-width: $MQ_Desktop) {
+      .navlinks {
         display: flex;
       }
+    }
+
+    @media screen and (min-width: $MQ_Tablet) {
+      .buttons {
+        display: flex;
+      }
+    }
+
+    .navlinks {
+      margin: 0 1rem;
       .link {
         color: #eee;
         text-decoration: none;
