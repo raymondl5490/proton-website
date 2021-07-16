@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CTAButton from "../../site/callToActionButton";
+import CTAButton from "@/components/site/callToActionButton";
 import styles from "./OurStory.module.scss";
 
 export const OurStory = () => {

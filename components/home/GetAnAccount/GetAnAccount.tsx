@@ -1,6 +1,6 @@
 import styles from "./GetAnAccount.module.scss";
 import Link from "next/link";
-import CTAButton from "../../site/callToActionButton";
+import CTAButton from "@/components/site/callToActionButton";
 
 interface GetAnAccountProps {
   href: string | "/signup";
