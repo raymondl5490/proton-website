@@ -1,6 +1,6 @@
+import Link from "next/link";
+import CTAButton from "@/components/site/callToActionButton";
 import styles from "./PhysicalSecurity.module.scss";
-
-import CTAButton from "../../site/callToActionButton";
 
 export const PhysicalSecurity = () => {
   return (
@@ -11,7 +11,11 @@ export const PhysicalSecurity = () => {
           Your data is stored on fully encrypted servers distributed across several
           biometric-secured data centers.
         </p>
-        <CTAButton type={1}>Learn more about our security features</CTAButton>
+        <Link href="/security-details">
+          <a>
+            <CTAButton type={1}>Learn more about our security features</CTAButton>
+          </a>
+        </Link>
       </div>
     </section>
   );
