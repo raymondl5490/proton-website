@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CTAButton from "../../site/callToActionButton";
 import styles from "./OurStory.module.scss";
 
@@ -26,8 +27,16 @@ export const OurStory = () => {
           </p>
         </div>
         <div className={styles.buttons}>
-          <CTAButton type={3}>Meet our team</CTAButton>
-          <CTAButton type={4}>Join us</CTAButton>
+          <Link href="/about">
+            <a>
+              <CTAButton type={3}>Meet our team</CTAButton>
+            </a>
+          </Link>
+          <Link href="https://careers.protonmail.com">
+            <a>
+              <CTAButton type={4}>Join us</CTAButton>
+            </a>
+          </Link>
         </div>
       </div>
     </section>
