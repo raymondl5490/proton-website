@@ -1,5 +1,5 @@
 import styles from "./Hero.module.scss";
-import CTAButton from "../../site/callToActionButton";
+import CTAButton from "@/components/site/callToActionButton";
 import Image from "next/image";
 import Link from "next/link";
 

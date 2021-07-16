@@ -1,8 +1,8 @@
 import styles from "./Navbar.module.scss";
-import PMLogo from "../PMLogo";
+import PMLogo from "@/components/site/PMLogo";
 import Link from "next/link";
 import SocialIcons from "./SocialIcons";
-import CTAButton from "../callToActionButton";
+import CTAButton from "@/components/site/callToActionButton";
 import { useState, useEffect } from "react";
 
 export const Navbar = () => {
