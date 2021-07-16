@@ -1,0 +1,32 @@
+@import '~/styles/breakpoints.scss';
+
+.container {
+  background-color: #f6f6f6;
+  padding: 4rem 2rem;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $MQ_Phone) {
+    flex-direction: row;
+  }
+
+  .text,
+  .buttons {
+    margin: 2rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+}

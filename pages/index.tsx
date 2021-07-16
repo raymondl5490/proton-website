@@ -11,6 +11,7 @@ import PartnersAndSponsors from "../components/home/PartnersAndSponsors";
 import ContactInformation from "../components/home/ContactInformation";
 import Testimonials from "../components/home/Testimonials";
 import Blog from "@/components/home/Blog";
+import Privacy from "@/components/home/Privacy";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Testimonials />
       <OurStory />
       <BasedInSwitzerland />
+      <Privacy />
       <Blog />
       <PartnersAndSponsors />
       <Map />
