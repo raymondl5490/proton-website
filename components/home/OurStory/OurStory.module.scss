@@ -1,11 +1,15 @@
+@import '~/styles/breakpoints.scss';
 .container {
   .banner {
-    background-image: url("/home/story-banner.jpg");
+    background-image: url('/home/story-banner.jpg');
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 30rem;
+    height: 15rem;
+    @media screen and (min-width: $MQ_Tablet) {
+      height: 30rem;
+    }
   }
   .content {
     padding: 2rem;
