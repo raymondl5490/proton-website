@@ -4,7 +4,7 @@ import Image from "next/image";
 export const PartnersAndSponsors = () => {
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>Partners and Sponsors</h1>
+      <h4 className={styles.title}>Partners and Sponsors</h4>
       <div className={styles.images}>
         <Image
           src="/home/partners/partners-01.jpg"
