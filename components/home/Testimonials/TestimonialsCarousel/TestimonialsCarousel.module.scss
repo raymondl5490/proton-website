@@ -1,5 +1,4 @@
 .container {
-  display: flex;
   justify-content: center;
   font-size: 1.5rem;
   .testimonial {
@@ -12,7 +11,7 @@
       &:after {
         font-weight: initial;
         color: #ccc;
-        content: "\2014";
+        content: '\2014';
         margin: 0 0.25rem;
       }
     }
