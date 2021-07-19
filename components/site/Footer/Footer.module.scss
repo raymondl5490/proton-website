@@ -1,4 +1,9 @@
 .container {
-  background-color: #505061;
-  padding: 2rem;
+  .contactInfo {
+    border-top: 1px solid #eee;
+  }
+  .innerContainer {
+    background-color: #505061;
+    padding: 2rem;
+  }
 }

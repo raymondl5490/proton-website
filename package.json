@@ -24,7 +24,6 @@
     "@types/humanize-duration": "^3.25.1",
     "@types/react": "17.0.13",
     "@types/webpack-env": "^1.16.2",
-    "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",
     "prettier": "^2.3.2",

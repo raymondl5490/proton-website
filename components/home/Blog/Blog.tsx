@@ -1,5 +1,5 @@
 import Article from "./Article";
-import data from "./Articles.json";
+import data from "@/data/blog/Articles.json";
 import styles from "./Blog.module.scss";
 
 export const Blog = () => {

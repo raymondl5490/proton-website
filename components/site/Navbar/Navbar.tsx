@@ -1,11 +1,11 @@
-import styles from "./Navbar.module.scss";
-import PMLogo from "@/components/site/PMLogo";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import PMLogo from "@/components/site/PMLogo";
 import SocialIcons from "./SocialIcons";
 import CTAButton from "@/components/site/callToActionButton";
-import { useState, useEffect } from "react";
+import styles from "./Navbar.module.scss";
 
-export const Navbar = () => {
+export const Navbar = ({ opacity }: { opacity: "auto" | "opaque" }) => {
   let [opaqueNavbar, makeNavbarOpaque] = useState(Boolean);
   let navbarDebounceTimer!: number;
 
@@ -34,9 +34,13 @@ export const Navbar = () => {
   };
 
   useEffect(() => {
-    handleNavbarOpacity();
-    window.addEventListener("scroll", handleNavbarOpacity);
-    return () => window.removeEventListener("scroll", handleNavbarOpacity);
+    if (opacity === "auto") {
+      handleNavbarOpacity();
+      window.addEventListener("scroll", handleNavbarOpacity);
+      return () => window.removeEventListener("scroll", handleNavbarOpacity);
+    } else {
+      makeNavbarOpaque(true);
+    }
   });
 
   return (
@@ -51,7 +55,11 @@ export const Navbar = () => {
 
       <div className={styles.secondary}>
         <div className={styles.logo}>
-          <PMLogo />
+          <Link href="/">
+            <a>
+              <PMLogo />
+            </a>
+          </Link>
         </div>
 
         <nav className={styles.navlinks}>

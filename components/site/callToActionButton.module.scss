@@ -10,11 +10,11 @@
   text-transform: uppercase;
 
   &.type-1 {
+    color: #fff;
     border-color: #fff;
     &:hover {
       border-color: #9199cb;
       background-color: #9199cb;
-      color: #fff;
     }
   }
 

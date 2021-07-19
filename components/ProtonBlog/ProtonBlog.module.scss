@@ -1,0 +1,6 @@
+@import '~/styles/breakpoints.scss';
+
+.container {
+  max-width: $MQ_SoccerField;
+  margin: 10rem auto 0;
+}

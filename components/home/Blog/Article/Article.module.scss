@@ -1,6 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
+  .link {
+    text-decoration: none;
+  }
   .excerpt {
     line-height: 1.5;
     flex-grow: 1;

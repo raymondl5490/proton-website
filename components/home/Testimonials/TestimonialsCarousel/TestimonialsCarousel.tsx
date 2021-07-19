@@ -15,7 +15,7 @@ export const TestimonialsCarousel = () => {
           <div key={index} className={styles.testimonial}>
             <p className={styles.author}>{testimonial.author}</p>
             <Link href={testimonial.link}>
-              <a>
+              <a className={styles.link}>
                 <p className={styles.quote}>&quot;{testimonial.quote}&quot;</p>
               </a>
             </Link>

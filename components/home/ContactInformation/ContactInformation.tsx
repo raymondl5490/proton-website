@@ -1,4 +1,10 @@
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import styles from "./ContactInformation.module.scss";
+
+library.add(faEnvelope);
 
 export const ContactInformation = () => {
   return (
@@ -21,19 +27,40 @@ export const ContactInformation = () => {
       </div>
       <div className={styles.contactInformation}>
         <p className={styles.ciText}>
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
           General: <span title="contact@protonmail.com">Show email</span>
         </p>
-        <p className={styles.ciText}>Media: media@protonmail.com</p>
-        <p className={styles.ciText}>Legal: legal@protonmail.com</p>
-        <p className={styles.ciText}>Partnership: partners@protonmail.com</p>
+        <p className={styles.ciText}>
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Media: media@protonmail.com
+        </p>
+        <p className={styles.ciText}>
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Legal: legal@protonmail.com
+        </p>
+        <p className={styles.ciText}>
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Partnership:
+          partners@protonmail.com
+        </p>
       </div>
 
       <div className={styles.contactInformation}>
-        <p className={styles.ciText}>For legal/police inquiries click here</p>
+        <p className={styles.ciText}>
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Abuse: abuse@protonmail.com
+        </p>
+        <p className={styles.ciText}>
+          For legal/police inquiries,{" "}
+          <Link href="/law-enforcement">
+            <a>click here</a>
+          </Link>
+        </p>
       </div>
 
       <div className={styles.contactInformation}>
-        <p className={styles.ciText}>For support inquiries, please visit protonmail.com/support</p>
+        <p className={styles.ciText}>
+          For support inquiries, please visit{" "}
+          <Link href="https://protonmail.com/support">
+            <a>protonmail.com/support</a>
+          </Link>
+        </p>
       </div>
     </div>
   );

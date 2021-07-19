@@ -1,23 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import humanizeDuration from "humanize-duration";
+import { HumanDate, unixToUTCDate } from "@/functions/TimeDate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faComment } from "@fortawesome/free-regular-svg-icons";
-library.add(faComment);
-import { ArticleProperties } from "./Article.d";
-
+import { ArticleProperties } from "@/types/BlogArticle";
 import styles from "./Article.module.scss";
-
-export const HumanDate = (unixTimestamp: number): string => {
-  return humanizeDuration(Math.floor(Date.now() - unixTimestamp * 1000), {
-    largest: 2,
-    maxDecimalPoints: 0,
-  });
-};
-
-export const unixToUTCDate = (unixTimestamp: number): string =>
-  new Date(unixTimestamp * 1000).toUTCString();
+library.add(faComment);
 
 export const Article = ({ data }: { data: ArticleProperties }) => {
   return (
@@ -36,7 +25,7 @@ export const Article = ({ data }: { data: ArticleProperties }) => {
       </div>
 
       <Link href={data.link}>
-        <a>
+        <a className={styles.link}>
           <h1 className={styles.title}>{data.title}</h1>
         </a>
       </Link>
@@ -54,7 +43,7 @@ export const Article = ({ data }: { data: ArticleProperties }) => {
         <span className={styles.comments}>
           <FontAwesomeIcon
             icon={faComment}
-            height=".8rem"
+            height="0.8rem"
             style={{ verticalAlign: "bottom", marginRight: ".33rem" }}
           />
           {data.meta.comments.commentsCount == 0 && "No comments"}

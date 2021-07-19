@@ -1,0 +1,25 @@
+.container {
+  margin-bottom: 1rem;
+  .summary {
+    .title {
+      font-size: 1.12em;
+    }
+  }
+  .linkAndComments {
+    display: flex;
+    font-size: 0.9rem;
+    .link,
+    .commentsCount {
+      color: rgb(80, 80, 97);
+    }
+    .link {
+      flex-grow: 1;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+    .commentsCount {
+      align-content: flex-end;
+      flex-shrink: 1;
+    }
+  }
+}

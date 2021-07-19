@@ -14,6 +14,12 @@ body {
     color: rgb(80, 80, 97);
   }
 
+  h1,
+  h2,
+  h3 {
+    font-weight: 500;
+  }
+
   h4,
   h5,
   h6 {
@@ -22,8 +28,11 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: darken(#9497ce, 20%);
+}
+
+p {
+  line-height: 1.6;
 }
 
 * {
