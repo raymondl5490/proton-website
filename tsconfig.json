@@ -15,8 +15,11 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/styles/*": ["styles/*"]
+      "@/components/*": ["components/*"], // Project components
+      "@/styles/*": ["styles/*"], // Global stylesheets
+      "@/data/*": ["data/*"], // Data
+      "@/types/*": ["types/*"], // Type definitions
+      "@/functions/*": ["functions/*"] // Global reusable functions
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
