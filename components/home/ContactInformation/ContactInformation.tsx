@@ -27,8 +27,8 @@ export const ContactInformation = () => {
       </div>
       <div className={styles.contactInformation}>
         <p className={styles.ciText}>
-          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
-          General: <span title="contact@protonmail.com">Show email</span>
+          <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> General:{" "}
+          <span title="contact@protonmail.com">Show email</span>
         </p>
         <p className={styles.ciText}>
           <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> Media: media@protonmail.com
