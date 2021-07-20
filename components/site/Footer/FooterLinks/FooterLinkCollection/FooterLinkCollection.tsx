@@ -19,7 +19,7 @@ export const FooterLinkCollection = ({ title, links }: FooterLinkCollectionType)
       <ul className={styles.links}>
         {links.map((link, index) => (
           <Link href={link.location} key={index}>
-            <a>
+            <a style={{ textDecoration: "none" }}>
               <li className={styles.link}>{link.title}</li>
             </a>
           </Link>
