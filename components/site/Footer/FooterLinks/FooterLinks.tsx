@@ -1,6 +1,6 @@
 import styles from "./FooterLinks.module.scss";
 import FooterLinkCollection from "./FooterLinkCollection";
-import links from "./FooterLinks.json";
+import links from "@/data/site/FooterLinks.json";
 
 export const FooterLinks = () => {
   return (

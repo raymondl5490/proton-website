@@ -1,6 +1,6 @@
 import styles from "./Features.module.scss";
 import Feature from "./Feature";
-import FeaturesData from "./Features.json";
+import FeaturesData from "@/data/home/Features.json";
 
 interface FeatureDataType extends Record<string, string> {
   icon: string;

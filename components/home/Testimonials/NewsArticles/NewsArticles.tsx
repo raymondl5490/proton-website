@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArticleProperties } from "./NewsArticles.interfaces";
+import ArticleProperties from "@/data/home/NewsArticles";
 import styles from "./NewsArticles.module.scss";
-import articlesData from "./NewsArticles.json";
+import articlesData from "@/data/home/NewsArticles.json";
 
 const data: ArticleProperties[] = articlesData;
 

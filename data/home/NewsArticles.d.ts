@@ -10,3 +10,5 @@ export interface ArticleProperties {
   image: ImageProperties;
   link: string;
 }
+
+export default ArticleProperties;

@@ -3,3 +3,5 @@ export interface TestimonialProperties extends Record<string, string> {
   quote: string;
   link: string;
 }
+
+export default TestimonialProperties;

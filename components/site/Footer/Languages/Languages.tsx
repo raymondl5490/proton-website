@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./Languages.module.scss";
-import availableLanguages from "./Languages.json";
+import availableLanguages from "@/data/site/Languages.json";
 
 export const Languages = () => {
   return (

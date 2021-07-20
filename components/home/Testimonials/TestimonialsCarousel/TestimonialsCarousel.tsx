@@ -2,8 +2,8 @@ import Link from "next/link";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import styles from "./TestimonialsCarousel.module.scss";
-import testimonialsData from "./Testimonials.json";
-import { TestimonialProperties } from "./Testimonials.interfaces";
+import testimonialsData from "@/data/home/Testimonials.json";
+import TestimonialProperties from "@/data/home/Testimonials";
 
 const data: TestimonialProperties[] = testimonialsData;
 
