@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AboutUs from "@/components/about/AboutUs";
+import OurPeople from "@/components/about/OurPeople";
 
 export const About = () => {
   return (
@@ -13,6 +14,7 @@ export const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <AboutUs />
+      <OurPeople />
     </main>
   );
 };
