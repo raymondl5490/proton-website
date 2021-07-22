@@ -6,7 +6,7 @@
     max-width: $MQ_XL;
     margin: 0 auto;
     padding: 0 2rem;
-    @media screen and (max-width: $MQ_Phone) {
+    @media screen and (max-width: $MQ_Desktop) {
       flex-direction: column;
     }
     .article {
