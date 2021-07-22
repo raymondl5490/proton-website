@@ -1,0 +1,36 @@
+@import '~/styles/breakpoints.scss';
+.container {
+  padding: 5rem 2rem;
+  color: #fff;
+  background-color: #505061;
+  .inner {
+    display: flex;
+    align-items: center;
+    max-width: $MQ_XL;
+    margin: 0 auto;
+
+    @media screen and (max-width: $MQ_Phone) {
+      flex-direction: column;
+      .message {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .message {
+      flex-grow: 1;
+
+      .title,
+      .subtitle {
+        color: inherit;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

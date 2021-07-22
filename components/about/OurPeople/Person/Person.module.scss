@@ -1,0 +1,59 @@
+.container {
+  .picture {
+    position: relative;
+    box-sizing: border-box;
+    line-height: 0; // Otherwise picture does not take full height of container.
+
+    .story {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #eee;
+      padding: 1.5rem;
+      line-height: 1.75;
+      overflow-y: scroll;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .name {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+  }
+  .position {
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 0;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -0.5rem;
+      height: 2px;
+      width: 2rem;
+      background: #9199cb;
+    }
+  }
+  .social {
+    padding-top: 0.25rem;
+    .link {
+      &:not(:last-of-type) {
+        margin-right: 0.5rem;
+      }
+      .icon {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

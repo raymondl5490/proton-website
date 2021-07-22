@@ -1,0 +1,21 @@
+@import '~/styles/breakpoints.scss';
+
+.container {
+  max-width: $MQ_XL;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: grid;
+  gap: 1rem;
+
+  @media screen and (min-width: $MQ_Tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $MQ_Desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: $MQ_XL) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
