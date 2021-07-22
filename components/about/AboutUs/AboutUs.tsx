@@ -5,7 +5,7 @@ export const AboutUs = () => {
   return (
     <section className={styles.container}>
       <h1 className={styles.title}>
-        We're building an internet that protects privacy, starting with email.
+        We&apos;re building an internet that protects privacy, starting with email.
       </h1>
       <div className={styles.paragraphs}>
         <p className={styles.paragraph}>
@@ -17,9 +17,10 @@ export const AboutUs = () => {
         </p>
         <p className={styles.paragraph}>
           We are committed to developing and widely distributing the tools necessary to protect your
-          data online. Our team combines deep mathematical and technical knowledge from the world's
-          top research institutions with expertise in building easy to use user interfaces.
-          Together, we are building the encrypted communication technologies of the future.
+          data online. Our team combines deep mathematical and technical knowledge from the
+          world&apos;s top research institutions with expertise in building easy to use user
+          interfaces. Together, we are building the encrypted communication technologies of the
+          future.
         </p>
       </div>
       <div className={styles.buttons}>

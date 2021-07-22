@@ -9,7 +9,7 @@ export const OurStory = () => {
           <span className={styles.text}>
             <p>
               Since our founding team met at CERN and created ProtonMail, Proton Technologies AG has
-              grown into a global leader in online security. Today, we are the world's largest
+              grown into a global leader in online security. Today, we are the world&apos;s largest
               secure email provider with over one million users. In addition to our headquarters in
               Geneva, Switzerland, we have support centers in San Francisco, CA, and Skopje,
               Macedonia. Our global presence allows us to provide 24/7 support and monitoring of
@@ -24,10 +24,10 @@ export const OurStory = () => {
             <p>
               ProtonMail is supported by more than 10,000 individuals from around the world who
               participated in our record-breaking crowdfunding campaign. Additional backers include
-              the European Commission and the Fondation Genevoise pour l'Innovation Technologique
-              (FONGIT), a non-profit foundation financed by the Swiss Federal Commission for
-              Technology and Innovation for the public good. We are also advised by the MIT Venture
-              Mentoring Service.
+              the European Commission and the Fondation Genevoise pour l&apos;Innovation
+              Technologique (FONGIT), a non-profit foundation financed by the Swiss Federal
+              Commission for Technology and Innovation for the public good. We are also advised by
+              the MIT Venture Mentoring Service.
             </p>
           </span>
         </article>
