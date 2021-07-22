@@ -1,6 +1,9 @@
 import Head from "next/head";
 import AboutUs from "@/components/about/AboutUs";
 import OurPeople from "@/components/about/OurPeople";
+import Banner from "@/components/about/Banner";
+import GetAnAccount from "@/components/home/GetAnAccount";
+import OurStory from "@/components/about/OurStory";
 
 export const About = () => {
   return (
@@ -15,6 +18,13 @@ export const About = () => {
       </Head>
       <AboutUs />
       <OurPeople />
+      <Banner />
+      <OurStory />
+      <GetAnAccount
+        headerText="Get your secure email account"
+        buttonText="Create Account"
+        href="/signup"
+      />
     </main>
   );
 };

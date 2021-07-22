@@ -1,0 +1,28 @@
+@import '~/styles/breakpoints.scss';
+.container {
+  padding: 2rem 0;
+  .inner {
+    display: flex;
+    max-width: $MQ_XL;
+    margin: 0 auto;
+    padding: 0 2rem;
+    @media screen and (max-width: $MQ_Phone) {
+      flex-direction: column;
+    }
+    .article {
+      flex-basis: 50%;
+      .title {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+    }
+    .image {
+      flex-basis: 50%;
+      .imageCaption {
+        margin: 0.5rem 0;
+        font-style: italic;
+        color: #505061;
+      }
+    }
+  }
+}
