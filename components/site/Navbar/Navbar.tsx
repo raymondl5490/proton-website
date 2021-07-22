@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import PMLogo from "@/components/site/PMLogo";
 import SocialIcons from "./SocialIcons";
@@ -7,8 +7,6 @@ import styles from "./Navbar.module.scss";
 
 export const Navbar = ({ opacity }: { opacity: "auto" | "opaque" }) => {
   let [opaqueNavbar, makeNavbarOpaque] = useState(Boolean);
-  let navbarDebounceTimer!: number;
-
   /**
    * @function handleNavbarOpacity() changes the value of `opaqueNavbar`
    * to `true` when the user scrolls down.
@@ -20,7 +18,8 @@ export const Navbar = ({ opacity }: { opacity: "auto" | "opaque" }) => {
    * as JavaScript could trigger events an excessive amount of times,
    * especially when using it with a scroll listener.
    */
-  const handleNavbarOpacity = (): void => {
+  const handleNavbarOpacity = useCallback(() => {
+    let navbarDebounceTimer!: number;
     if (navbarDebounceTimer) {
       window.cancelAnimationFrame(navbarDebounceTimer);
     }
@@ -31,7 +30,7 @@ export const Navbar = ({ opacity }: { opacity: "auto" | "opaque" }) => {
         makeNavbarOpaque(false);
       }
     });
-  };
+  }, []);
 
   useEffect(() => {
     if (opacity === "auto") {
@@ -41,7 +40,7 @@ export const Navbar = ({ opacity }: { opacity: "auto" | "opaque" }) => {
     } else {
       makeNavbarOpaque(true);
     }
-  });
+  }, [opacity, handleNavbarOpacity]);
 
   return (
     <header
