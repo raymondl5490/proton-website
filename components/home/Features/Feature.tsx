@@ -1,11 +1,6 @@
-import styles from "./Feature.module.scss";
+import { FeatureProps } from "@/types/Features";
 
-export interface FeatureProps {
-  icon: string;
-  title: string;
-  subtitle: string;
-  description: string;
-}
+import styles from "./Feature.module.scss";
 
 export const Feature = ({ icon, title, subtitle, description }: FeatureProps) => {
   return (
