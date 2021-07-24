@@ -4,6 +4,7 @@ export interface FooterLinkCollectionType {
 }
 
 export interface LinkDetails {
+  icon?: string[];
   title: string;
   location: string;
   description?: string;

@@ -1,20 +1,11 @@
 import styles from "./Features.module.scss";
 import Feature from "./Feature";
-import FeaturesData from "@/data/home/Features.json";
-
-interface FeatureDataType extends Record<string, string> {
-  icon: string;
-  title: string;
-  subtitle: string;
-  description: string;
-}
-
-let jsonFeatures: FeatureDataType[] = FeaturesData;
+import { Features as data } from "@/data/home/Features";
 
 export const Features = () => {
   return (
     <section className={styles.container}>
-      {jsonFeatures.map((feature, index) => (
+      {data.map((feature, index) => (
         <Feature
           key={index}
           icon={feature.icon}
