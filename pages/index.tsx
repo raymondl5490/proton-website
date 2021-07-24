@@ -11,6 +11,7 @@ import PartnersAndSponsors from "@/components//home/PartnersAndSponsors";
 import Testimonials from "@/components//home/Testimonials";
 import Blog from "@/components/home/Blog";
 import Privacy from "@/components/home/Privacy";
+import ProtonApps from "@/components/home/ProtonApps";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <ProtonApps />
       <Features />
       <GetAnAccount
         href="/signup"

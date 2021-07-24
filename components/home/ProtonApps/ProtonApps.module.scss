@@ -1,0 +1,26 @@
+@import '~/styles/breakpoints.scss';
+
+.container {
+  border-bottom: 1px solid #eee;
+  padding: 2rem 2rem;
+  font-size: 0.85rem;
+
+  .inner {
+    max-width: $MQ_Desktop;
+    margin: 0 auto;
+    .buttons {
+      display: flex;
+      @media screen and (max-width: $MQ_Phone) {
+        flex-direction: column;
+        .button {
+          margin-bottom: 0.5rem;
+          align-self: center;
+        }
+      }
+      margin: 2rem 0;
+      .button:not(:last-of-type) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
