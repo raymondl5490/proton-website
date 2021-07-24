@@ -1,11 +1,11 @@
-import people from "@/data/about/People.json";
+import { People as data } from "@/data/about/People";
 import Person from "./Person";
 import styles from "./OurPeople.module.scss";
 
 export const OurPeople = () => {
   return (
     <div className={styles.container}>
-      {people.map((person, index) => (
+      {data.map((person, index) => (
         <Person data={person} key={index} />
       ))}
     </div>
