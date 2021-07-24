@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { PersonProperties } from "@/data/about/People";
-import styles from "./Person.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import type { PersonProperties } from "@/types/People";
+import styles from "./Person.module.scss";
 library.add(faLinkedinIn, faTwitter);
 
 export const Person = ({ data }: { data: PersonProperties }) => {

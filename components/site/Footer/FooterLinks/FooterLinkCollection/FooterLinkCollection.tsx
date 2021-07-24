@@ -1,16 +1,6 @@
-import styles from "./FooterLinkCollection.module.scss";
 import Link from "next/link";
-
-export interface FooterLinkCollectionType {
-  title: string;
-  links: Array<LinkDetails>;
-}
-
-export interface LinkDetails {
-  title: string;
-  location: string;
-  description?: string;
-}
+import { FooterLinkCollectionType } from "@/types/FooterLinkCollection";
+import styles from "./FooterLinkCollection.module.scss";
 
 export const FooterLinkCollection = ({ title, links }: FooterLinkCollectionType) => {
   return (
