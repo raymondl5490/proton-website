@@ -4,8 +4,17 @@ import PMLogo from "@/components/site/PMLogo";
 import SocialIcons from "./SocialIcons";
 import CTAButton from "@/components/site/callToActionButton";
 import styles from "./Navbar.module.scss";
+import { NavLinks as NavLinkProperties } from "@/types/NavLinks";
+import Sidebar from "../Sidebar";
+import Hamburger from "../Sidebar/Hamburger";
 
-export const Navbar = ({ opacity }: { opacity: "auto" | "opaque" }) => {
+export interface ComponentProps {
+  links: NavLinkProperties;
+  opacity: "auto" | "opaque";
+}
+
+export const Navbar = (props: ComponentProps) => {
+  let [sidebarShown, showSidebar] = useState(Boolean);
   let [opaqueNavbar, makeNavbarOpaque] = useState(Boolean);
   /**
    * @function handleNavbarOpacity() changes the value of `opaqueNavbar`
@@ -33,78 +42,72 @@ export const Navbar = ({ opacity }: { opacity: "auto" | "opaque" }) => {
   }, []);
 
   useEffect(() => {
-    if (opacity === "auto") {
+    if (props.opacity === "auto") {
       handleNavbarOpacity();
       window.addEventListener("scroll", handleNavbarOpacity);
       return () => window.removeEventListener("scroll", handleNavbarOpacity);
     } else {
       makeNavbarOpaque(true);
     }
-  }, [opacity, handleNavbarOpacity]);
+  }, [props.opacity, handleNavbarOpacity]);
+
+  function toggleSidebar() {
+    showSidebar(!sidebarShown);
+  }
 
   return (
-    <header
-      className={`${styles.container} ${opaqueNavbar ? styles.opaque : ""}`}
-      onScroll={handleNavbarOpacity}
-    >
-      <div className={styles.primary}>
-        <SocialIcons size={16} />
-        <div className="language-picker"></div>
-      </div>
-
-      <div className={styles.secondary}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <a>
-              <PMLogo />
-            </a>
-          </Link>
+    <>
+      <header
+        className={`${styles.container} ${opaqueNavbar ? styles.opaque : ""}`}
+        onScroll={handleNavbarOpacity}
+      >
+        <div className={styles.primary}>
+          <SocialIcons size={16} />
+          <div className="language-picker"></div>
         </div>
 
-        <nav className={styles.navlinks}>
-          <Link href="/about">
-            <a className={styles.link}>About</a>
-          </Link>
+        <div className={styles.secondary}>
+          <div className={styles.logo}>
+            <Link href="/">
+              <a>
+                <PMLogo />
+              </a>
+            </Link>
+          </div>
 
-          <Link href="/security-details">
-            <a className={styles.link}>Security</a>
-          </Link>
+          <nav className={styles.navlinks}>
+            {props.links.map((collection) =>
+              collection.items.map((item, index) => (
+                <Link href={item.link} key={index}>
+                  <a className={styles.link}>{item.title}</a>
+                </Link>
+              ))
+            )}
+          </nav>
+          <div className={styles.buttons}>
+            <Link href="/login">
+              <a className={styles.button}>
+                <CTAButton type={1}>Log in</CTAButton>
+              </a>
+            </Link>
 
-          <Link href="/blog">
-            <a className={styles.link}>Blog</a>
-          </Link>
-
-          <Link href="https://careers.protonmail.com/">
-            <a className={`${styles.link} external`}>Careers</a>
-          </Link>
-
-          <Link href="/support">
-            <a className={styles.link}>Support</a>
-          </Link>
-
-          <Link href="/#professional">
-            <a className={`${styles.link} dropdown`}>Professional</a>
-          </Link>
-
-          <Link href="https://protonvpn.com/">
-            <a className={`${styles.link} external`}>VPN</a>
-          </Link>
-        </nav>
-        <div className={styles.buttons}>
-          <Link href="/login">
-            <a className={styles.button}>
-              <CTAButton type={1}>Log in</CTAButton>
-            </a>
-          </Link>
-
-          <Link href="/signup">
-            <a className={styles.button}>
-              <CTAButton type={2}>Sign up</CTAButton>
-            </a>
-          </Link>
+            <Link href="/signup">
+              <a className={styles.button}>
+                <CTAButton type={2}>Sign up</CTAButton>
+              </a>
+            </Link>
+          </div>
+          <div className={styles.hamburger}>
+            <Link href="">
+              <a onClick={toggleSidebar}>
+                <Hamburger />
+              </a>
+            </Link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <Sidebar links={props.links} visible={sidebarShown} />
+    </>
   );
 };
 
