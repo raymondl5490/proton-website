@@ -1,11 +1,12 @@
 .container {
   position: fixed;
-  min-width: 90vw;
+  min-width: 80vw;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.95);
   color: #fff;
   z-index: 100;
   padding: 2rem;
+  transition: transform 0.25s ease-in-out;
 
   &.right {
     text-align: right;
@@ -13,7 +14,8 @@
   }
 
   &.hidden {
-    display: none;
+    // display: none;
+    transform: translateX(-125%);
   }
 
   h1 {

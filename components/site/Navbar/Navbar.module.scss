@@ -90,5 +90,11 @@
         }
       }
     }
+
+    .hamburger {
+      @media screen and (min-width: $MQ_Phone) {
+        display: none;
+      }
+    }
   }
 }

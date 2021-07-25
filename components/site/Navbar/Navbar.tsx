@@ -6,6 +6,7 @@ import CTAButton from "@/components/site/callToActionButton";
 import styles from "./Navbar.module.scss";
 import { NavLinks as NavLinkProperties } from "@/types/NavLinks";
 import Sidebar from "../Sidebar";
+import Hamburger from "../Sidebar/Hamburger";
 
 export interface ComponentProps {
   links: NavLinkProperties;
@@ -13,6 +14,7 @@ export interface ComponentProps {
 }
 
 export const Navbar = (props: ComponentProps) => {
+  let [sidebarShown, showSidebar] = useState(Boolean);
   let [opaqueNavbar, makeNavbarOpaque] = useState(Boolean);
   /**
    * @function handleNavbarOpacity() changes the value of `opaqueNavbar`
@@ -48,6 +50,10 @@ export const Navbar = (props: ComponentProps) => {
       makeNavbarOpaque(true);
     }
   }, [props.opacity, handleNavbarOpacity]);
+
+  function toggleSidebar() {
+    showSidebar(!sidebarShown);
+  }
 
   return (
     <>
@@ -91,9 +97,16 @@ export const Navbar = (props: ComponentProps) => {
               </a>
             </Link>
           </div>
+          <div className={styles.hamburger}>
+            <Link href="">
+              <a onClick={toggleSidebar}>
+                <Hamburger />
+              </a>
+            </Link>
+          </div>
         </div>
       </header>
-      <Sidebar links={props.links} visible={false} />
+      <Sidebar links={props.links} visible={sidebarShown} />
     </>
   );
 };
