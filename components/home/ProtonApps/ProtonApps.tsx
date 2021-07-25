@@ -25,7 +25,7 @@ const ProtonApps = () => {
           <div className={styles.button}>
             <Link href="https://play.google.com/store/apps/details?id=ch.protonmail.android&utm_campaign=ww-all-2a-mail-int_site-g_acq-apps_links_homepage&utm_source=protonmail.com&utm_medium=link&utm_content=homepage&utm_term=android">
               <a>
-                <Image src="/google-play-en.svg" width={135} height={40} alt="Apple App Store" />
+                <Image src="/google-play-en.svg" width={135} height={40} alt="Google Play Store" />
               </a>
             </Link>
           </div>

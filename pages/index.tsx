@@ -5,7 +5,7 @@ import Map from "@/components/home/Map";
 import Features from "@/components//home/Features";
 import GetAnAccount from "@/components//home/GetAnAccount";
 import PhysicalSecurity from "@/components//home/PhysicalSecurity";
-import OurStory from "@/components//home/OurStory";
+import OurStory from "@/components/home/OurStory";
 import BasedInSwitzerland from "@/components//home/BasedInSwitzerland";
 import PartnersAndSponsors from "@/components//home/PartnersAndSponsors";
 import Testimonials from "@/components//home/Testimonials";

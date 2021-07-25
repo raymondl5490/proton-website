@@ -1,0 +1,49 @@
+.container {
+  position: fixed;
+  min-width: 90vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  z-index: 100;
+  padding: 2rem;
+
+  &.right {
+    text-align: right;
+    right: 0;
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    color: inherit;
+  }
+  .collections {
+    .collection {
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+        padding: unset;
+        li {
+          a {
+            color: inherit;
+          }
+        }
+        li:not(:last-child) {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+}
