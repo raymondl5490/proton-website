@@ -1,14 +1,12 @@
 .socialIcons {
-  margin-bottom: 0.25rem;
+  @apply my-1 flex;
   .socialIcon {
-    color: #eee;
-    opacity: 0.66;
-    transition: opacity 200ms ease-in-out;
+    @apply text-gray-100 opacity-60 transition-opacity my-1;
     &:hover {
-      opacity: 1;
+      @apply opacity-100;
     }
     &:not(:first-of-type) {
-      margin-left: 0.66rem;
+      @apply ml-3;
     }
   }
 }
