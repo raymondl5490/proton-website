@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         'mountains': "url('/home/mountains.png')",
+      },
+      colors: {
+        'pm-1': '#505061',
+        'pm-2': '#9497ce',
       }
     },
   },

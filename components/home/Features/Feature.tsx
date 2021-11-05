@@ -4,7 +4,7 @@ import styles from "./Feature.module.scss";
 
 export const Feature = ({ icon, title, subtitle, description }: FeatureProps) => {
   return (
-    <section className={styles.feature}>
+    <section className={styles.container}>
       <div className={`${styles.icon} ${styles[icon]}`} />
       <h1 className={styles.title}>{title}</h1>
       <h2 className={styles.subtitle}>{subtitle}</h2>
