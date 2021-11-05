@@ -13,7 +13,7 @@ export const GetAnAccount = ({ href, headerText, buttonText }: GetAnAccountProps
     <section className={styles.container}>
       <h1 className={styles.headerText}>{headerText}</h1>
       <Link href={href}>
-        <a>
+        <a className={styles.button}>
           <CTAButton type={3}>{buttonText}</CTAButton>
         </a>
       </Link>
