@@ -1,25 +1,23 @@
 .container {
-  display: flex;
-  flex-direction: column;
+  @apply flex flex-col;
+  
   .link {
-    text-decoration: none;
+    @apply no-underline text-xl my-2;
   }
+
   .excerpt {
-    line-height: 1.5;
-    flex-grow: 1;
-    margin-top: 0;
+    @apply leading-6 flex-grow my-2;
   }
+
   .meta {
-    display: flex;
-    color: rgb(80, 80, 97);
-    font-size: 0.85rem;
+    @apply flex text-gray-500 text-sm my-2;
 
     .date {
-      flex-grow: 1;
+      @apply flex-grow;
     }
+
     .comments {
-      flex-shrink: 1;
-      align-self: flex-end;
+      @apply flex-shrink self-end flex items-center;
     }
   }
 }
