@@ -7,6 +7,7 @@ module.exports = {
         'mountains': "url('/home/mountains.png')",
         'mountains-2': "url('/home/mountains-2.jpg')",
         'person-whiteboard': "url('/home/person-in-front-of-whiteboard.jpg')",
+        'map-dots': "url('/home/map-dots.jpg')",
       },
       colors: {
         'pm-1': '#505061',
