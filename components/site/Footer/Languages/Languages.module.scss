@@ -1,24 +1,12 @@
 .container {
-  margin: 2rem auto 0;
-  width: 60%;
-  color: #848690;
-  text-align: center;
-  font-size: 0.8rem;
+  @apply w-8/12 mx-auto mt-8 text-gray-400 text-center text-sm;
 
   a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.1s ease;
-
-    &:hover {
-      color: #eee;
-    }
+    @apply text-inherit no-underline transition-colors duration-100 ease-linear hover:text-gray-200;
 
     &:not(:last-of-type) {
       &:after {
-        display: inline-block;
-        margin: 0 0.25rem;
-        color: #848690;
+        @apply inline-block mx-1 text-gray-400;
         content: "\2022";
       }
     }

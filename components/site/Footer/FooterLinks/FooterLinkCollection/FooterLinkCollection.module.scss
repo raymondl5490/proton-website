@@ -1,27 +1,13 @@
 .container {
-  flex-grow: 1;
-  &:not(:last-of-type) {
-    margin-right: 2rem;
-  }
+  @apply flex-grow mb-4 last-of-type:mb-0 md:mr-8 md:last-of-type:mr-0;
+
   .title {
-    color: #eee;
-    border-bottom: 1px solid #5a5b6a;
-    padding-bottom: 1rem;
-    font-weight: 400;
+    @apply text-slate-200 border-b border-b-gray-500 pb-4 mb-4 font-normal;
   }
 
   ul.links {
-    padding-left: 0;
-    list-style: none;
-
     li.link {
-      color: #848690;
-      transition: color 0.1s ease-in-out;
-      line-height: 2;
-      &:hover {
-        color: #eee;
-        text-decoration: underline;
-      }
+      @apply text-gray-400 hover:text-gray-50 hover:underline leading-8 transition-colors duration-100 ease-in-out;
     }
   }
 }

@@ -1,9 +1,8 @@
 .container {
   .contactInfo {
-    border-top: 1px solid #eee;
+    @apply border-t border-t-slate-200;
   }
   .innerContainer {
-    background-color: #505061;
-    padding: 2rem;
+    @apply bg-pm-3 p-8;
   }
 }
