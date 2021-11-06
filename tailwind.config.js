@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         'mountains': "url('/home/mountains.png')",
         'mountains-2': "url('/home/mountains-2.jpg')",
+        'person-whiteboard': "url('/home/person-in-front-of-whiteboard.jpg')",
       },
       colors: {
         'pm-1': '#505061',
