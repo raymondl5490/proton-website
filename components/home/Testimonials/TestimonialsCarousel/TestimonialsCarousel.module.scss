@@ -1,21 +1,21 @@
 .container {
-  justify-content: center;
-  font-size: 1.5rem;
+  @apply justify-center text-2xl;
+
   .testimonial {
-    padding-bottom: 2rem;
+    @apply pb-8;
+
     .link {
-      text-decoration: none;
+      @apply no-underline;
+
     }
+
     .author {
-      font-size: 1rem;
-      font-weight: 600;
-      color: darken(rgb(80, 80, 97), 5%);
+      @apply text-base font-semibold text-pm-1;
+
       &:before,
       &:after {
-        font-weight: initial;
-        color: #ccc;
+        @apply font-medium text-gray-300 mx-1;
         content: '\2014';
-        margin: 0 0.25rem;
       }
     }
   }
