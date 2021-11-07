@@ -1,12 +1,6 @@
 .socialIcons {
   @apply my-1 flex;
   .socialIcon {
-    @apply text-gray-100 opacity-60 transition-opacity my-1;
-    &:hover {
-      @apply opacity-100;
-    }
-    &:not(:first-of-type) {
-      @apply ml-3;
-    }
+    @apply text-gray-100 opacity-60 transition-opacity ml-3 my-1 first-of-type:ml-0 hover:opacity-100;
   }
 }
