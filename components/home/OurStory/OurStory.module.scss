@@ -13,14 +13,13 @@
 
     .title {
       @apply text-2xl;
-
     }
     .subtitle {
       @apply text-xl;
     }
 
     .text {
-      @apply flex max-w-screen-xl self-center gap-4;
+      @apply grid md:grid-cols-2 max-w-screen-xl self-center gap-4;
 
       .paragraph {
         @apply leading-6 mr-4 last-of-type:mr-0;
