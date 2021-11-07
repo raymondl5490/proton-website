@@ -16,11 +16,11 @@ export const Features: FeatureProps[] = [
       "We use end-to-end encryption and zero access encryption to secure emails. This means even we cannot decrypt and read your emails. As a result, your encrypted emails cannot be shared with third parties.",
   },
   {
-    icon: "anonymous",
-    title: "Anonymous Email",
-    subtitle: "Protect Your Privacy",
+    icon: "key",
+    title: "Your data, your rules",
+    subtitle: "Protect your privacy",
     description:
-      "No personal information is required to create your secure email account. By default, we do not keep any IP logs which can be linked to your anonymous email account. Your privacy comes first.",
+      'ProtonMail is an email provider/service that respects privacy and puts people (not advertisers) first. Your data belongs to you, and our encryption ensures that. We also provide an <a href="/tor" target="_blank">anonymous email</a> gateway.',
   },
   {
     icon: "free",

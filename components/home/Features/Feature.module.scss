@@ -3,7 +3,7 @@
 
   .icon {
     @apply block mb-4 w-12 h-12 text-pm-2;
-    background: url("/home/service-sprites.svg");
+    background: url('/home/service-sprites.svg');
 
     &.swiss {
       background-position: 0 0;
@@ -13,7 +13,7 @@
       background-position: -54px 0;
     }
 
-    &.anonymous {
+    &.key {
       background-position: -107px 0;
     }
 
@@ -31,11 +31,11 @@
   }
 
   .title {
-    @apply font-light;
+    @apply text-2xl font-bold;
   }
 
   .subtitle {
-    @apply mb-4 text-xl font-extralight;
+    @apply mb-4 text-xl font-light;
   }
 
   .description {
