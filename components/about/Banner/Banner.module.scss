@@ -1,35 +1,23 @@
-@import '~/styles/breakpoints.scss';
 .container {
-  padding: 5rem 2rem;
-  color: #fff;
-  background-color: #505061;
-  .inner {
-    display: flex;
-    align-items: center;
-    max-width: $MQ_XL;
-    margin: 0 auto;
+  @apply px-10 py-20 text-white bg-pm-1;
 
-    @media screen and (max-width: $MQ_Phone) {
-      flex-direction: column;
-      .message {
-        margin-bottom: 2rem;
-      }
-    }
+  .inner {
+    @apply flex flex-col items-center max-w-screen-xl mx-auto md:flex-row;
 
     .message {
-      flex-grow: 1;
+      @apply flex-grow mb-8 md:mb-0;
 
       .title,
       .subtitle {
-        color: inherit;
+        @apply text-inherit;
       }
 
       .title {
-        font-size: 2rem;
+        @apply text-4xl mb-4;
       }
 
       .subtitle {
-        font-size: 1.2rem;
+        @apply text-xl;
       }
     }
   }

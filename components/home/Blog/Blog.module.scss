@@ -1,20 +1,11 @@
-@import '~/styles/breakpoints.scss';
 .container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 2rem;
+  @apply flex flex-col px-8;
 
   .title {
-    text-align: center;
+    @apply text-center text-2xl;
   }
+
   .articles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    margin: 2rem auto;
-    max-width: $MQ_Desktop;
-    @media screen and (min-width: $MQ_Desktop) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    @apply max-w-screen-lg grid gap-8 grid-cols-1 lg:grid-cols-2 mx-auto my-8;
   }
 }

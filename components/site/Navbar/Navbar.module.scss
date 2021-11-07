@@ -1,83 +1,44 @@
-@import '~/styles/breakpoints.scss';
-
 .container {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 0.2s ease-in-out;
-  font-size: 0.9rem;
+  @apply fixed top-0 z-10 items-center pb-8 w-full bg-black bg-transparent transition-all duration-200 ease-in-out text-sm;
 
   &.opaque {
-    padding-bottom: 1rem;
-    background-color: #505061;
+    @apply pb-4 bg-pm-1;
   }
 
   .primary,
   .secondary {
-    padding: 0 2rem;
+    @apply px-8;
   }
 
   .primary {
-    margin-bottom: 1.25rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+    @apply flex flex-col items-end mb-5 border-b-white border-opacity-20;
   }
 
   .secondary {
-    display: flex;
-    align-items: center;
+    @apply flex items-center;
     .logo {
-      flex: 2;
-    }
-
-    .navlinks,
-    .buttons {
-      display: none;
-    }
-
-    @media screen and (min-width: $MQ_Desktop) {
-      .navlinks {
-        display: flex;
-      }
-    }
-
-    @media screen and (min-width: $MQ_Tablet) {
-      .buttons {
-        display: flex;
-      }
+      @apply flex-grow;
     }
 
     .navlinks {
-      margin: 0 1rem;
-      padding-top: 10px; // 3 + 7 = 10 - see below
+      @apply hidden lg:flex;
+    }
+
+    .buttons {
+      @apply hidden md:flex;
+    }
+
+    .navlinks {
+      @apply pt-[10px] my-4; // 3 + 7 = 10 - see below
       .link {
-        color: #eee;
-        text-decoration: none;
-        &:not(:last-of-type) {
-          margin-right: 1rem;
-        }
+        @apply text-gray-200 no-underline mr-4;
         &:after {
-          transform: scale(0, 1);
-          transition: all 550ms cubic-bezier(0.45, 1, 0.32, 1);
-          box-sizing: border-box;
+          @apply scale-0 static block w-auto h-[3px] mt-[7px] bg-pm-2 box-border transition-all duration-500 ease-in-out;
           content: ' ';
-          position: static;
-          width: auto;
-          height: 3px;
-          background: #9497ce;
-          margin-top: 7px;
-          display: block;
         }
         &:hover {
           &:after {
-            transform: scale(1, 1);
+            @apply transform scale-100;
           }
         }
       }
@@ -86,15 +47,13 @@
     .buttons {
       .button {
         &:not(:last-of-type) {
-          margin-right: 0.5rem;
+          @apply mr-2;
         }
       }
     }
 
     .hamburger {
-      @media screen and (min-width: $MQ_Phone) {
-        display: none;
-      }
+      @apply md:hidden;
     }
   }
 }

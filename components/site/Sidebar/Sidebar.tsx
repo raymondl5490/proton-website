@@ -20,9 +20,9 @@ export const Sidebar = (props: ComponentProps) => {
       <nav>
         <PMLogo />
         <h1>Menu</h1>
-        <div className={styles.collections}>
+        <div className={styles.linkCollections}>
           {props.links.map((collection, index) => (
-            <div className={styles.collection} key={index}>
+            <div className={styles.linkCollection} key={index}>
               {collection.title && <h2>{collection.title}</h2>}
               <ul>
                 {collection.items.map((item, index) => (

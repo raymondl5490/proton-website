@@ -1,27 +1,26 @@
-@import '~/styles/breakpoints.scss';
 .container {
-  padding: 2rem 0;
+  @apply py-12 px-8;
+
   .inner {
-    display: flex;
-    max-width: $MQ_XL;
-    margin: 0 auto;
-    padding: 0 2rem;
-    @media screen and (max-width: $MQ_Desktop) {
-      flex-direction: column;
+    @apply flex flex-col gap-8 sm:flex-row max-w-screen-xl mx-auto;
+
+    .article,
+    .image {
+      @apply sm:w-1/2;
     }
+
     .article {
-      flex-basis: 50%;
       .title {
-        font-size: 2rem;
-        margin-bottom: 0;
+        @apply text-4xl mb-4;
+      }
+      p {
+        @apply mb-4;
       }
     }
+
     .image {
-      flex-basis: 50%;
       .imageCaption {
-        margin: 0.5rem 0;
-        font-style: italic;
-        color: #505061;
+        @apply my-1 italic text-pm-1;
       }
     }
   }

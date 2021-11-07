@@ -1,32 +1,16 @@
-@import '~/styles/breakpoints.scss';
-
 .container {
-  background-color: #f6f6f6;
-  padding: 4rem 2rem;
-  margin: 4rem 0;
-  display: flex;
-  justify-content: center;
-
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: $MQ_Phone) {
-    flex-direction: row;
-  }
+  @apply flex flex-col lg:flex-row items-center justify-center bg-gray-100 px-8 py-16 my-16;
 
   .text,
   .buttons {
-    margin: 2rem;
+    @apply m-8;
   }
 
   .text {
-    font-size: 1.5rem;
-    font-weight: 400;
+    @apply text-2xl font-normal;
   }
 
   .buttons {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
+    @apply flex items-center text-xl;
   }
 }

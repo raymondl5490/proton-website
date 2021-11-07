@@ -1,58 +1,36 @@
 .container {
+  @apply mb-4;
+
   .picture {
-    position: relative;
-    box-sizing: border-box;
-    line-height: 0; // Otherwise picture does not take full height of container.
+    @apply relative box-border leading-none mb-4;
 
     .story {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: 0.5s ease;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #eee;
-      padding: 1.5rem;
-      line-height: 1.75;
-      overflow-y: scroll;
-      &:hover {
-        opacity: 1;
-      }
+      @apply absolute top-0 bottom-0 left-0 right-0 h-full w-full
+      bg-black text-gray-100 text-lg leading-8 p-6 overflow-y-scroll
+      opacity-0 transition-opacity duration-500 ease-in-out hover:opacity-90;
     }
   }
+
   .name {
-    font-size: 1.15rem;
-    margin-bottom: 0.25rem;
+    @apply text-lg mb-1;
   }
+
   .position {
-    position: relative;
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 0;
+    @apply relative text-sm font-light;
+
     &:after {
+      @apply block absolute left-0 -bottom-2 w-8 h-0.5 bg-pm-4;
       content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: -0.5rem;
-      height: 2px;
-      width: 2rem;
-      background: #9199cb;
     }
   }
   .social {
-    padding-top: 0.25rem;
+    @apply pt-1;
+
     .link {
-      &:not(:last-of-type) {
-        margin-right: 0.5rem;
-      }
+      @apply mr-2 last-of-type:mr-0;
+
       .icon {
-        width: 15px;
-        height: 15px;
+        @apply inline w-4 h-4 my-4;
       }
     }
   }

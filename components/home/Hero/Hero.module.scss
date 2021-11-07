@@ -1,55 +1,31 @@
-@import '~/styles/breakpoints';
-
 .container {
-  background-image: url('/home/main-banner.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  width: 100%;
-  padding-top: 8rem;
+  @apply bg-mountains bg-center bg-cover bg-no-repeat text-white w-full pt-32;
 
   .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem 2rem;
-
-    @media screen and (min-width: $MQ_Phone) {
-      flex-direction: row;
-      padding: 12rem 2rem;
-    }
+    @apply flex flex-col justify-center px-8 py-16 md:flex-row md:px-8 md:py-48;
 
     .text {
       .title,
       .subtitle,
       .purpose {
-        color: #fff;
+        @apply text-white;
       }
 
       .title {
-        font-size: 3rem;
-        margin: 0;
+        @apply text-5xl m-0;
       }
 
       .subtitle {
-        font-weight: 100;
-        font-size: 3rem;
-        margin: 0;
+        @apply text-5xl font-thin m-0;
       }
 
       .purpose {
-        margin: 1.5rem 0 2rem;
-        font-weight: 600;
+        @apply font-semibold mt-6 mb-8;
       }
     }
 
     .image {
-      max-width: 600px;
-      margin-top: 2rem;
-      @media screen and (min-width: $MQ_Phone) {
-        transform: translateY(-4rem);
-      }
+      @apply max-w-2xl mt-8 md:-translate-y-16;
     }
   }
 }

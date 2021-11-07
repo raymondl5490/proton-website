@@ -6,6 +6,7 @@ import styles from "./NewsArticles.module.scss";
 export const NewsArticles = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.images}>
       {data.map((article, index) => (
         <Link key={index} href={article.link}>
           <a className={styles.article} title={`${article.author}: ${article.title}`}>
@@ -19,6 +20,7 @@ export const NewsArticles = () => {
           </a>
         </Link>
       ))}
+      </div>
     </div>
   );
 };

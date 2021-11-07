@@ -1,10 +1,7 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @apply flex flex-col justify-center;
+
   .carousel {
-    margin-top: 4rem;
-    width: 60%;
-    align-self: center;
+    @apply mt-16 w-8/12 self-center;
   }
 }

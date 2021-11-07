@@ -1,29 +1,19 @@
-@import '~/styles/breakpoints.scss';
-
 .container {
-  background-image: url('/home/security-bg.jpg');
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 12rem 0;
-  display: flex;
-  color: #eee;
+  @apply flex py-48 text-gray-200 bg-mountains-2 bg-fixed bg-cover bg-center bg-no-repeat;
   .modalWindow {
-    background-color: #505061;
-    padding: 3rem;
-    max-width: $MQ_Tablet;
-    margin: 0 2rem;
+    @apply max-w-screen-sm mx-8 p-12 bg-pm-3;
+
     .title,
     .text {
-      color: #fff;
+      @apply text-white;
     }
+
     .title {
-      margin: 0;
+      @apply m-0;
     }
+
     .text {
-      margin: 2rem 0;
-      line-height: 1.5rem;
+      @apply my-8 leading-6;
     }
   }
 }
