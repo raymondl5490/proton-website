@@ -1,6 +1,3 @@
-@import '~/styles/breakpoints.scss';
-
 .container {
-  max-width: $MQ_XL;
-  margin: 10rem auto 0;
+  @apply max-w-screen-xl mx-auto;
 }

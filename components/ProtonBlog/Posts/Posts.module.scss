@@ -1,38 +1,9 @@
-@import '~/styles/breakpoints.scss';
-
 .container {
-  display: grid;
-  gap: 2rem;
-  margin: 2rem 0;
-  padding: 2rem;
-  max-width: $MQ_XL;
+  @apply grid gap-8 my-8 p-8 max-w-screen-xl md:grid-cols-2 lg:grid-cols-3;
 
-  @media screen and (min-width: $MQ_Tablet) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media screen and (min-width: $MQ_Desktop) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .featuredImage {
-  }
   .summary {
     .title {
-      transition: color 0.2s ease-in-out;
-      &:hover {
-        color: #111;
-      }
+      @apply text-gray-500 text-2xl transition-colors duration-200 ease-in-out hover:text-gray-900;
     }
-    /* .meta {
-      .date {
-      }
-      .category {
-      }
-    }
-    .excerpt {
-    }
-    .button {
-    } */
   }
 }
