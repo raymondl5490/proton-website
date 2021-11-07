@@ -1,30 +1,34 @@
 .container {
   @apply text-sm p-8;
-  
-  @screen sm {
-    @apply grid gap-4 grid-cols-4 px-32 py-8;
-  }
 
-  .physicalAddress {
-    .vcard {
-      @apply flex flex-col text-pm-3 not-italic;
+  .inner {
+    @apply max-w-screen-lg mx-auto;
 
-      .org {
-        @apply font-extrabold;
-      }
+    @screen sm {
+      @apply grid gap-4 grid-cols-4;
+    }
 
-      .adr {
-        @apply mt-4;
+    .physicalAddress {
+      .vcard {
+        @apply flex flex-col text-pm-3 not-italic;
+
+        .org {
+          @apply font-extrabold;
+        }
+
+        .adr {
+          @apply mt-4;
+        }
       }
     }
-  }
 
-  .contactInformation {
-    @apply my-2 sm:my-0;
-    .ciText {
-      @apply leading-4 mb-2 last-of-type:mb-0;
-      .icon {
-        @apply inline w-4 h-4 mr-1 align-middle;
+    .contactInformation {
+      @apply my-2 sm:my-0;
+      .ciText {
+        @apply leading-4 mb-2 last-of-type:mb-0;
+        .icon {
+          @apply inline w-4 h-4 mr-1 align-middle;
+        }
       }
     }
   }
