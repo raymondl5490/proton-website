@@ -29,7 +29,7 @@
     }
 
     .navlinks {
-      @apply my-4 pt-[10px]; // 3 + 7 = 10 - see below
+      @apply pt-[10px] my-4; // 3 + 7 = 10 - see below
       .link {
         @apply text-gray-200 no-underline mr-4;
         &:after {
