@@ -1,18 +1,18 @@
-@import '~/styles/breakpoints.scss';
 .container {
-  text-align: center;
-  max-width: $MQ_Desktop;
-  margin: 0 auto;
-  padding: 0 2rem;
+  @apply max-w-screen-xl mx-auto px-8 text-center;
+
   .title {
-    font-size: 2.6rem;
-    font-weight: 700;
+    @apply text-4xl font-bold my-8;
   }
+
   .paragraphs {
-    font-size: 1.1rem;
-    // .paragraph { }
+    @apply text-lg max-w-screen-sm mx-auto my-8;
+    p {
+      @apply mb-4;
+    }
   }
+
   .buttons {
-    margin-top: 2rem;
+    @apply mt-8;
   }
 }

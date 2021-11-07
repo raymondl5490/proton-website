@@ -1,7 +1,12 @@
 .container {
   @apply flex flex-col items-center py-8 border-t border-solid border-gray-200;
 
-  .headerText, .button {
+  .headerText,
+  .button {
     @apply my-2;
+  }
+
+  .headerText {
+    @apply text-2xl;
   }
 }
