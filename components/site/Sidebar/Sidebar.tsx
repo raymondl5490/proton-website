@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { NavLinks as NavLinkProperties } from "@/types/NavLinks";
+import { NavItemCollections as NavLinkProperties } from "@/types/NavLinks";
 
 import styles from "./Sidebar.module.scss";
 import PMLogo from "@/components/site/PMLogo";
 
-export interface ComponentProps {
+export interface SidebarProps {
   links: NavLinkProperties;
   position?: "left" | "right";
   visible?: boolean;
 }
 
-export const Sidebar = (props: ComponentProps) => {
+export const Sidebar = (props: SidebarProps) => {
   return (
     <aside
       className={`${styles.container} ${props.position === "right" && styles.right} ${
