@@ -1,6 +1,6 @@
-import { NavLinks as NavLinkProperties } from "@/types/NavLinks";
+import { NavItemCollections } from "@/types/NavLinks";
 
-export const NavLinks: NavLinkProperties = [
+export const NavLinks: NavItemCollections = [
   {
     items: [
       { title: "About", link: "/about" },

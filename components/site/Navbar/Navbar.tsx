@@ -4,16 +4,16 @@ import PMLogo from "@/components/site/PMLogo";
 import SocialIcons from "./SocialIcons";
 import CTAButton from "@/components/site/callToActionButton";
 import styles from "./Navbar.module.scss";
-import { NavLinks as NavLinkProperties } from "@/types/NavLinks";
+import { NavItemCollections as NavLinkProperties } from "@/types/NavLinks";
 import Sidebar from "../Sidebar";
 import Hamburger from "../Sidebar/Hamburger";
 
-export interface ComponentProps {
+export interface NavbarProps {
   links: NavLinkProperties;
   opacity: "auto" | "opaque";
 }
 
-export const Navbar = (props: ComponentProps) => {
+export const Navbar = (props: NavbarProps) => {
   let [sidebarShown, showSidebar] = useState(Boolean);
   let [opaqueNavbar, makeNavbarOpaque] = useState(Boolean);
   /**

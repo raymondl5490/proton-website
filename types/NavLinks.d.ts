@@ -4,9 +4,9 @@ export interface NavItem {
   ariaLabel?: string;
 }
 
-export interface ItemCollection {
+export interface NavItemCollection {
   title?: string;
   items: Array<NavItem>;
 }
 
-export type NavLinks = ItemCollection[];
+export type NavItemCollections = NavItemCollection[];
