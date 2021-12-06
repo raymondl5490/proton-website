@@ -4,7 +4,7 @@ This is a replica of ProtonMail's website (protonmail.com), made in [Next.js][ne
 
 ## Demo
 
-After each push to `develop`, [Vercel][vercel homepage] builds a demo, which becomes available at [protonmail-website-develop.vercel.app](https://protonmail-website-develop.vercel.app).
+After each push to `develop`, [Vercel][vercel homepage] builds a demo, which becomes available at [protonmail-website-dev.demo.ricardo.nu](https://protonmail-website-dev.demo.ricardo.nu).
 
 ## Getting started
 
