@@ -16,10 +16,11 @@ export interface NavGroup<T> extends NavItem {
 /**
  * NavLink, i.e. inherited from NavItem, but extended with link properties.
  */
-export interface NavLink extends NavItem {
+export interface NavLink<T> extends NavItem {
   link: string;
   rel?: string;
   target?: string;
+  children?: T[]; // TODO: This omits TS errors, but is not technically correct.
 }
 
 /**
