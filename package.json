@@ -25,6 +25,7 @@
     "@types/react": "17.0.13",
     "@types/webpack-env": "^1.16.2",
     "autoprefixer": "^10.3.7",
+    "clsx": "^1.1.1",
     "eslint": "7.29.0",
     "eslint-config-next": "11.0.1",
     "postcss": "^8.3.11",

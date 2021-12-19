@@ -1,11 +1,13 @@
 import Link from "next/link";
-import { NavItemCollections as NavLinkProperties } from "@/types/NavLinks";
 
 import styles from "./Sidebar.module.scss";
 import PMLogo from "@/components/site/PMLogo";
 
+import { NavMenu } from "@/components/global/Navigation";
+import { NavigationMenu } from "@/types/NavLinks";
+
 export interface SidebarProps {
-  links: NavLinkProperties;
+  links: NavigationMenu;
   position?: "left" | "right";
   visible?: boolean;
 }
@@ -17,26 +19,15 @@ export const Sidebar = (props: SidebarProps) => {
         props.visible === false && styles.hidden
       }`}
     >
-      <nav>
-        <PMLogo />
-        <h1>Menu</h1>
-        <div className={styles.linkCollections}>
-          {props.links.map((collection, index) => (
-            <div className={styles.linkCollection} key={index}>
-              {collection.title && <h2>{collection.title}</h2>}
-              <ul>
-                {collection.items.map((item, index) => (
-                  <li key={index}>
-                    <Link href={item.link}>
-                      <a>{item.title}</a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </nav>
+      <Link href="/">
+        <a>
+          <PMLogo className={styles.logo} />
+        </a>
+      </Link>
+
+      <div className={styles.linkCollections}>
+        <NavMenu items={props.links} id="sidebar-nav" />
+      </div>
     </aside>
   );
 };
