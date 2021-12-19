@@ -9,24 +9,27 @@
     @apply -translate-x-full invisible;
   }
 
-  h1 {
-    @apply text-xl mt-8 mb-6 text-inherit;
+  .logo {
+    @apply text-xl my-6 text-inherit;
   }
 
   .linkCollections {
-    .linkCollection {
-      @apply mb-8 last-of-type:mb-0;
+    @apply mb-8 last-of-type:mb-0;
 
-      h2 {
-        @apply text-lg text-inherit;
+    ul:not(:first-child) {
+      li {
+        @apply ml-4;
       }
+    }
 
-      ul {
-        li {
-          a {
-            @apply text-inherit;
-          }
-          @apply mb-4 last-of-type:mb-0;
+    ul {
+      li {
+        a,
+        span {
+          @apply inline-block text-gray-200 mb-4;
+        }
+        a {
+          @apply hover:underline;
         }
       }
     }

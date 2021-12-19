@@ -28,17 +28,44 @@
       @apply hidden md:flex;
     }
 
-    .navlinks {
-      @apply pt-[10px] my-4; // 3 + 7 = 10 - see below
-      .link {
-        @apply text-gray-200 no-underline mr-4;
-        &:after {
-          @apply scale-0 static block w-auto h-[3px] mt-[7px] bg-pm-2 box-border transition-all duration-500 ease-in-out;
-          content: ' ';
-        }
-        &:hover {
-          &:after {
-            @apply transform scale-100;
+    .navMenu {
+      @apply hidden md:block;
+      .navItems {
+        @apply flex h-10 pt-[8px] my-4;
+        .navItem {
+          @apply mr-4;
+          &:hover {
+            .navGroup {
+              @apply opacity-100;
+            }
+          }
+          .navGroup {
+            @apply opacity-0 mb-8;
+            .navItem {
+              @apply mr-0;
+            }
+          }
+
+          .navLink,
+          .navLabel {
+            @apply inline-block text-gray-200 mb-2;
+          }
+
+          .navLink {
+            @apply no-underline;
+            &:after {
+              @apply scale-0 static block w-auto h-[3px] mt-[5px] bg-pm-2 box-border transition-all duration-500 ease-in-out;
+              content: ' ';
+            }
+            &:hover {
+              &:after {
+                @apply transform scale-100;
+              }
+            }
+          }
+
+          .navLabel {
+            @apply inline-block mb-4;
           }
         }
       }

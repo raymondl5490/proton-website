@@ -4,12 +4,13 @@ import PMLogo from "@/components/site/PMLogo";
 import SocialIcons from "./SocialIcons";
 import CTAButton from "@/components/site/callToActionButton";
 import styles from "./Navbar.module.scss";
-import { NavItemCollections as NavLinkProperties } from "@/types/NavLinks";
+import { NavMenu } from "@/components/global/Navigation";
+import { NavigationMenu } from "@/types/NavLinks";
 import Sidebar from "../Sidebar";
 import Hamburger from "../Sidebar/Hamburger";
 
 export interface NavbarProps {
-  links: NavLinkProperties;
+  links: NavigationMenu;
   opacity: "auto" | "opaque";
 }
 
@@ -75,15 +76,17 @@ export const Navbar = (props: NavbarProps) => {
             </Link>
           </div>
 
-          <nav className={styles.navlinks}>
-            {props.links.map((collection) =>
-              collection.items.map((item, index) => (
-                <Link href={item.link} key={index}>
-                  <a className={styles.link}>{item.title}</a>
-                </Link>
-              ))
-            )}
-          </nav>
+          <NavMenu
+            items={props.links}
+            id="main-nav"
+            classNameMenu={styles.navMenu}
+            classNameRoot={styles.navItems}
+            classNameItem={styles.navItem}
+            classNameGroup={styles.navGroup}
+            classNameLink={styles.navLink}
+            classNameLabel={styles.navLabel}
+          />
+
           <div className={styles.buttons}>
             <Link href="/login">
               <a className={styles.button}>
@@ -106,6 +109,7 @@ export const Navbar = (props: NavbarProps) => {
           </div>
         </div>
       </header>
+
       <Sidebar links={props.links} visible={sidebarShown} />
     </>
   );

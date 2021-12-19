@@ -1,15 +1,17 @@
-import { NavItemCollections } from "@/types/NavLinks";
+import { NavigationMenu } from "@/types/NavLinks";
 
-export const NavLinks: NavItemCollections = [
+export const NavLinks: NavigationMenu = [
+  { text: "About", link: "/about" },
+  { text: "Security", link: "/security-details" },
+  { text: "Blog", link: "/blog" },
+  { text: "Careers", link: "https://careers.protonmail.com" },
+  { text: "Support", link: "/support" },
   {
-    items: [
-      { title: "About", link: "/about" },
-      { title: "Security", link: "/security-details" },
-      { title: "Blog", link: "/blog" },
-      { title: "Careers", link: "https://careers.protonmail.com" },
-      { title: "Support", link: "/support" },
-      { title: "Professional", link: "/#professional" },
-      { title: "VPN", link: "https://protonvpn.com" },
+    text: "Professional",
+    children: [
+      { text: "Individual", link: "/professional" },
+      { text: "Business", link: "/business" },
     ],
   },
+  { text: "VPN", link: "https://protonvpn.com" },
 ];
