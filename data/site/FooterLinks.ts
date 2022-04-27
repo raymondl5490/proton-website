@@ -1,4 +1,4 @@
-import type { FooterLinkCollectionType } from "@/types/FooterLinkCollection";
+import type { FooterLinkCollectionType } from "@/models/FooterLinkCollection";
 
 export const FooterLinks: FooterLinkCollectionType[] = [
   {

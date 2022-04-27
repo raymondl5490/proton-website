@@ -5,7 +5,7 @@ import SocialIcons from "./SocialIcons";
 import CTAButton from "@/components/site/callToActionButton";
 import styles from "./Navbar.module.scss";
 import { NavMenu } from "@/components/global/Navigation";
-import { NavigationMenu } from "@/types/NavLinks";
+import { NavigationMenu } from "@/models/NavLinks";
 import Sidebar from "../Sidebar";
 import Hamburger from "../Sidebar/Hamburger";
 

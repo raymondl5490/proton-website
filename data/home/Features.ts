@@ -1,4 +1,4 @@
-import type { FeatureProps } from "@/types/Features";
+import type { FeatureProps } from "@/models/Features";
 
 export const Features: FeatureProps[] = [
   {

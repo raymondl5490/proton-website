@@ -1,7 +1,7 @@
 // A call to action button that is used in many different places
 // throughout the website, hence the placement under global components.
 
-import type { ctaButtonPropTypes } from "@/types/callToActionButton";
+import type { ctaButtonPropTypes } from "@/models/callToActionButton";
 
 import styles from "./callToActionButton.module.scss";
 

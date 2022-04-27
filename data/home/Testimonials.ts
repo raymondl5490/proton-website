@@ -1,4 +1,4 @@
-import type { TestimonialProperties } from "@/types/Testimonials";
+import type { TestimonialProperties } from "@/models/Testimonials";
 
 export const Testimonials: TestimonialProperties[] = [
   {

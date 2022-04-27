@@ -1,4 +1,4 @@
-import type { PersonProperties } from "@/types/People";
+import type { PersonProperties } from "@/models/People";
 
 export const People: PersonProperties[] = [
   {

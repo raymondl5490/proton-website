@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import type { PersonProperties } from "@/types/People";
+import type { PersonProperties } from "@/models/People";
 import styles from "./Person.module.scss";
 library.add(faLinkedinIn, faTwitter);
 

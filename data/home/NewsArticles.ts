@@ -1,4 +1,4 @@
-import type { ArticleProperties } from "@/types/NewsArticles";
+import type { ArticleProperties } from "@/models/NewsArticles";
 
 export const NewsArticles: ArticleProperties[] = [
   {

@@ -1,4 +1,4 @@
-import type { SiteLanguage } from "@/types/SiteLanguage";
+import type { SiteLanguage } from "@/models/SiteLanguage";
 
 export const Languages: SiteLanguage[] = [
   {

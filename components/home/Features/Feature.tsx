@@ -1,4 +1,4 @@
-import { FeatureProps } from "@/types/Features";
+import { FeatureProps } from "@/models/Features";
 
 import styles from "./Feature.module.scss";
 

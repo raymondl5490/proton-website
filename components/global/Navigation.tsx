@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { NavigationMenu } from "@/types/NavLinks";
+import { NavigationMenu } from "@/models/NavLinks";
 
 export interface SubMenuProps {
   classNameGroup?: string; // Class name given to <nav><ul className="nav-root"><li><ul className="[here]">...

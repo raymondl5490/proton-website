@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FooterLinkCollectionType } from "@/types/FooterLinkCollection";
+import { FooterLinkCollectionType } from "@/models/FooterLinkCollection";
 import styles from "./FooterLinkCollection.module.scss";
 
 export const FooterLinkCollection = ({ title, links }: FooterLinkCollectionType) => {

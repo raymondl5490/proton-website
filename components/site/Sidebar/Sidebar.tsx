@@ -4,7 +4,7 @@ import styles from "./Sidebar.module.scss";
 import PMLogo from "@/components/site/PMLogo";
 
 import { NavMenu } from "@/components/global/Navigation";
-import { NavigationMenu } from "@/types/NavLinks";
+import { NavigationMenu } from "@/models/NavLinks";
 
 export interface SidebarProps {
   links: NavigationMenu;

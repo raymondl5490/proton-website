@@ -1,4 +1,4 @@
-import { NavigationMenu } from "@/types/NavLinks";
+import { NavigationMenu } from "@/models/NavLinks";
 
 export const NavLinks: NavigationMenu = [
   { text: "About", link: "/about" },

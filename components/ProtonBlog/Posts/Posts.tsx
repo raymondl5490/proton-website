@@ -1,6 +1,6 @@
 import Post from "./Post/Post";
 import styles from "./Posts.module.scss";
-import { ArticleProperties } from "@/types/BlogArticle";
+import { ArticleProperties } from "@/models/BlogArticle";
 
 export const Posts = ({ data }: { data: ArticleProperties[] }) => {
   return (

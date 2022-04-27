@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HumanDate, unixToUTCDate } from "@/functions/TimeDate";
+import { HumanDate, unixToUTCDate } from "@/methods/TimeDate";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faComment } from "@fortawesome/free-regular-svg-icons";
-import { ArticleProperties } from "@/types/BlogArticle";
+import { ArticleProperties } from "@/models/BlogArticle";
 import styles from "./Article.module.scss";
 library.add(faComment);
 

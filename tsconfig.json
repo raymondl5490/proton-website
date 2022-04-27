@@ -18,8 +18,8 @@
       "@/components/*": ["components/*"], // Project components
       "@/styles/*": ["styles/*"], // Global stylesheets
       "@/data/*": ["data/*"], // Data
-      "@/types/*": ["types/*"], // Type definitions
-      "@/functions/*": ["functions/*"] // Global reusable functions
+      "@/models/*": ["models/*"], // Type definitions
+      "@/methods/*": ["methods/*"] // Global reusable functions
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

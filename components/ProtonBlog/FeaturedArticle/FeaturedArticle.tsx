@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import CTAButton from "@/components/site/callToActionButton";
 import styles from "./FeaturedArticle.module.scss";
-import { ArticleProperties } from "@/types/BlogArticle";
-import { HumanDate, unixToUTCDate } from "@/functions/TimeDate";
+import { ArticleProperties } from "@/models/BlogArticle";
+import { HumanDate, unixToUTCDate } from "@/methods/TimeDate";
 
 export const FeaturedArticle = ({ data }: { data: ArticleProperties }) => {
   return (
