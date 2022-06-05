@@ -1,0 +1,21 @@
+{
+  "name": "Proton Website",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "workspaceFolder": "/home/node/app",
+  "containerUser": "node",
+  "mounts": [
+    "source=${localWorkspaceFolder}/,target=/home/node/app/,type=bind,consistency=cached"
+  ],
+  "extensions": [
+    "vue.volar",
+    "bradlc.vscode-tailwindcss",
+    "cpylua.language-postcss"
+  ],
+  "postCreateCommand": "yarn",
+  "postStartCommand": "yarn dev"
+}
