@@ -1,0 +1,13 @@
+services:
+  proton-website:
+    extends:
+        file: docker-compose.yml
+        service: proton-website
+    build:
+      target: development
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+volumes:
+  node_modules: {}
