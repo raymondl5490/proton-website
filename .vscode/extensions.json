@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "vue.volar",
+        "bradlc.vscode-tailwindcss",
+        "cpylua.language-postcss"
+    ]
+}
