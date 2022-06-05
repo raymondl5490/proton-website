@@ -1,7 +1,0 @@
-.container {
-  @apply flex flex-col justify-center h-80 bg-white bg-map-dots bg-center bg-no-repeat;
-
-  .text {
-    @apply text-gray-200 uppercase text-xl font-medium text-center w-max self-center leading-8 px-2 mb-1 last-of-type:mb-0 bg-pm-3;
-  }
-}

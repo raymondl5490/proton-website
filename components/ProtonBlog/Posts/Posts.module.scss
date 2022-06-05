@@ -1,9 +1,0 @@
-.container {
-  @apply grid gap-8 my-8 p-8 max-w-screen-xl md:grid-cols-2 lg:grid-cols-3;
-
-  .summary {
-    .title {
-      @apply text-gray-500 text-2xl transition-colors duration-200 ease-in-out hover:text-gray-900;
-    }
-  }
-}
