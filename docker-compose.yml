@@ -1,0 +1,13 @@
+
+version: '3.8'
+services:
+  proton-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+    volumes:
+      - ./:/home/node/app/
+      - node_modules:/home/node/app/node_modules/
+volumes:
+  node_modules: {}
